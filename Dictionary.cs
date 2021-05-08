@@ -43,6 +43,9 @@ class MainClass {
       dict.Remove(1);
     }
     
+    // check if dictionary has value
+    Console.WriteLine(dict.ContainsValue("Two"));
+    
     // update value using key
     if(dict.ContainsKey(3)) {
       dict[3] = "Three";
@@ -60,6 +63,13 @@ class MainClass {
     foreach(var item in dict) {
       Console.WriteLine($"Key is {item.Key} and value is {item.Value}");
     }
+    
+    // Find number of items in the dictionary
+    Console.WriteLine(dict.Count);
+    
+    // removes all items
+    dict.Clear();
+    
 
     Console.WriteLine("Hello");
   }
